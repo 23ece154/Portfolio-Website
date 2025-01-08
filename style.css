@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    margin: 100px;
+    background-color: #d5755c;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 3%;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.profile-pic {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 2%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: block;
+    position: fixed;
+    bottom: 655px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #ff8364;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-container div {
+    width: 30%;
+}
+
+.skills-container ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.contact-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+
+/* for mobile view  */
+/* Header for mobile */
+header {
+    padding: 20px;
+    margin: 10px;
+}
+
+.header-content h1 {
+    font-size: 1.8em;
+}
+
+.header-content p {
+    font-size: 1em;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+}
+/* Hide nav links initially */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+/* Hide hamburger menu for larger screens */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+    }
+}
+/* Sections for mobile */
+section {
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.skills-container {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills-container div {
+    width: 100%;
+}
+/* Contact section for mobile */
+.contact-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item {
+    justify-content: center;
+}
+/* Footer for mobile */
+footer {
+    font-size: 0.8em;
+    padding: 5px 0;
+}
+/* For tablets and larger devices */
+@media (min-width: 768px) {
+    header {
+        padding: 40px;
+        margin: 20px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .skills-container {
+        flex-direction: row;
+    }
+
+    footer {
+        font-size: 1em;
+        padding: 10px 0;
+    }
+}
+
+/* For desktops */
+@media (min-width: 1200px) {
+    section {
+        max-width: 1000px;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>SRI KARTHIKA L</h1>
+            <p>MERN Stack Developer | Passionate about Building Web Applications</p>
+            <img src="image.jpg" alt="Sri Karthika" class="profile-pic">
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am Sri Karthika, an enthusiastic MERN stack web developer with a strong passion for building dynamic and responsive web applications. 
+            With expertise in MongoDB, Express.js, React.js, and Node.js, I am eager to contribute my skills to create innovative solutions. 
+            As a fresh graduate, I am excited to apply my knowledge in real-world projects and learn from experienced professionals. 
+            I am actively seeking opportunities to grow and make an impact in the field of website development.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div>
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>C</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Tools Familiar</h3>
+                <ul>
+                    <li>VSCode</li>
+                    <li>Eclipse</li>
+                    <li>Canva</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Database Technologies</h3>
+                <ul>
+                    <li>SQL</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>
+            This platform serves as a bridge for collaboration between NGOs and orphanages, enabling seamless communication and resource sharing. 
+            It allows NGOs to manage donations, track projects, and connect with orphanages in need. Built with user-friendliness in mind, the website supports 
+            volunteer sign-ups and donation tracking. By enhancing transparency and efficiency, it aims to make a real impact on the lives of children and families in need.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div class="contact-item">
+                <img src="git.png" alt="GitHub">
+                <a href="https://github.com/23ece154">GitHub Profile</a>
+            </div>
+            <div class="contact-item">
+                <img src="linkedin.png" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/sri-karthika-lakshmanasamy-42a400291/">LinkedIn Profile</a>
+            </div>
+            <div class="contact-item">
+                <img src="phone.png" alt="Phone">
+                <p>9345403910</p>
+            </div>
+            <div class="contact-item">
+                <img src="gmail.png" alt="Email">
+                <p>srikarthika.l2023ece@sece.ac.in</p>
+            </div>
+        </div>
+    </section>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+</script>
+    <footer>
+        <p>&copy; 2025 Sri Karthika | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
